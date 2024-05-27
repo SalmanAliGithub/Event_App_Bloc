@@ -18,7 +18,7 @@ void main() {
       // Mock AuthUtils.isLoggedIn() to return true
       when(mockAuthUtils.isLoggedIn()).thenAnswer((_) async => true);
       // Mock AuthUtils.getUserRole() to return 'admin'
-      when(mockAuthUtils.getUserRole(any)).thenAnswer((_) async => 'admin');
+      // when(mockAuthUtils.getUserRole(any)).thenAnswer((_) async => 'admin');
 
       await tester.pumpWidget(MaterialApp(
         home: SplashScreen(),
@@ -34,7 +34,7 @@ void main() {
     testWidgets('navigate to /events if user is logged in as non-admin',
         (WidgetTester tester) async {
       when(mockAuthUtils.isLoggedIn()).thenAnswer((_) async => true);
-      when(mockAuthUtils.getUserRole(any)).thenAnswer((_) async => 'user');
+      // when(mockAuthUtils.getUserRole(any)).thenAnswer((_) async => 'user');
 
       await tester.pumpWidget(MaterialApp(
         home: SplashScreen(),
