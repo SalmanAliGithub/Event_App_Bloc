@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../bloc/user_bloc/user_bloc.dart';
 import '../../bloc/user_bloc/user_state.dart';
 import '../../bloc/user_bloc/user_event.dart';
-import 'package:events_app/presentation/screens/sign_in_screen.dart';
 import 'package:events_app/utils/auth_utils.dart';
 
 import '../../models/validation_model.dart';
