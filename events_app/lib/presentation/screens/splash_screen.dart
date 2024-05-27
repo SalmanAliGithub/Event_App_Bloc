@@ -30,15 +30,9 @@ class _SplashScreenState extends State<SplashScreen>
       if (await AuthUtils.getUserRole(AuthUtils.getToken()) == 'admin') {
         context.go('/admin');
       } else {
-        // Navigator.of(context).pushReplacement(MaterialPageRoute(
-        //     builder: (_) =>
-        //         const EventsScreen())); // Go to events screen if logged in
         context.go('/events');
       }
     } else {
-      // Navigator.of(context).pushReplacement(MaterialPageRoute(
-      //     builder: (_) =>
-      //         SignInScreen())); // Go to sign in screen if not logged in
       context.go('/signin');
     }
   }

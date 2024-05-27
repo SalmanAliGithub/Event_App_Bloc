@@ -105,12 +105,6 @@ class EventCard extends StatelessWidget {
             children: [
               TextButton(
                 onPressed: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(
-                  //     builder: (context) => EventDetailScreen(event: event),
-                  //   ),
-                  // );
                   context.push('/event_detail/${event.id}');
                 },
                 child: const Text('DETAILS'),

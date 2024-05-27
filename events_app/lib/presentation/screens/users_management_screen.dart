@@ -93,14 +93,12 @@ class _UserManagementScreenState extends State<UserManagementScreen> {
           actions: <Widget>[
             TextButton(
               child: const Text("Cancel"),
-              // onPressed: () => Navigator.of(dialogContext).pop(),
               onPressed: () => context.pop(),
             ),
             TextButton(
               child: const Text("Delete", style: TextStyle(color: Colors.red)),
               onPressed: () {
                 context.read<UserBloc>().add(DeleteUser(userId));
-                // Navigator.of(dialogContext).pop();
                 context.pop();
               },
             ),
