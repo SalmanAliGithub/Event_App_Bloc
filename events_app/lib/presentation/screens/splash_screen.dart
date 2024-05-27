@@ -1,8 +1,5 @@
-import 'package:events_app/presentation/screens/admin_homepage_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:events_app/presentation/screens/sign_in_screen.dart';
-import 'package:events_app/presentation/screens/events_screen.dart';
 import 'package:events_app/utils/auth_utils.dart'; // Ensure this import is correct
 
 import 'package:go_router/go_router.dart';

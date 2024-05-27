@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:events_app/models/event_model.dart';
-import 'package:events_app/presentation/screens/event_detail_screen.dart';
 
 import 'package:go_router/go_router.dart';
 

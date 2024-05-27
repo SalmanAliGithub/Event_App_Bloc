@@ -4,7 +4,6 @@ import '../../bloc/event_bloc/event_bloc.dart';
 import '../../bloc/event_bloc/event_event.dart';
 import '../../models/event_model.dart';
 import '../../utils/notification_utils.dart';
-import 'events_management_screen.dart';
 
 class EditEventScreen extends StatefulWidget {
   final Event event;

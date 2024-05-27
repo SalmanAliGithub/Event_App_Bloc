@@ -8,8 +8,6 @@ import '../../models/user_model.dart';
 import '../../utils/auth_utils.dart';
 import '../../utils/validation_utils.dart';
 import '../../models/validation_model.dart';
-import 'sign_in_screen.dart';
-
 import 'package:go_router/go_router.dart';
 
 class PersonalAccountScreen extends StatefulWidget {
