@@ -183,8 +183,6 @@ class _PersonalAccountScreenState extends State<PersonalAccountScreen> {
 
   void _logout(BuildContext context) async {
     await AuthUtils.setToken(null); // Clear token
-    // Navigator.of(context).pushReplacement(
-    //     MaterialPageRoute(builder: (context) => SignInScreen()));
     context.go('/signin');
   }
 }

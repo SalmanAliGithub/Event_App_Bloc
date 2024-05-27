@@ -129,12 +129,6 @@ class _MyAccountScreenState extends State<MyAccountScreen> {
     );
   }
 
-  // void _logout(BuildContext context) async {
-  //   await AuthUtils.setToken(null); // Clear token
-  //   Navigator.of(context).pushReplacement(
-  //       MaterialPageRoute(builder: (context) => SignInScreen()));
-  // }
-
   void _logout(BuildContext context) async {
     await AuthUtils.setToken(null); // Clear token
     context.go('/signin'); // Navigate to the sign-in screen using go_router

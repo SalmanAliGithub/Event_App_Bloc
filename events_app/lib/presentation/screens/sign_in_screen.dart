@@ -40,9 +40,6 @@ class SignInScreen extends StatelessWidget {
           if (state is AuthSuccess) {
             NotificationUtils.showSnackBar(context, 'Sign in successful.',
                 isError: false);
-            // Navigator.of(context).pushReplacement(MaterialPageRoute(
-            //     builder: (context) =>
-            //         state.role == 'admin' ? AdminHomePage() : EventsScreen()));
             navigateBasedOnRole(context, state.role);
           } else if (state is AuthFailure) {
             NotificationUtils.showSnackBar(context, state.error, isError: true);
@@ -72,9 +69,6 @@ class SignInScreen extends StatelessWidget {
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
-                  // Navigator.of(context).push(
-                  //   MaterialPageRoute(builder: (context) => SignUpScreen()),
-                  // );
                   context.go('/signup');
                 },
                 child: const Text(

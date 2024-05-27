@@ -28,9 +28,6 @@ class _SplashScreenState extends State<SplashScreen>
     bool isLoggedIn = await AuthUtils.isLoggedIn();
     if (isLoggedIn) {
       if (await AuthUtils.getUserRole(AuthUtils.getToken()) == 'admin') {
-        // Navigator.of(context).pushReplacement(MaterialPageRoute(
-        //     builder: (_) =>
-        //         const AdminHomePage())); // Go to events screen if logged in
         context.go('/admin');
       } else {
         // Navigator.of(context).pushReplacement(MaterialPageRoute(

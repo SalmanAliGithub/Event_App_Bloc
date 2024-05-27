@@ -35,8 +35,6 @@ class SignUpScreen extends StatelessWidget {
           if (state is AuthSuccess) {
             NotificationUtils.showSnackBar(context, 'Sign up successful.',
                 isError: false);
-            // Navigator.of(context).pushReplacement(
-            //     MaterialPageRoute(builder: (_) => EventsScreen()));
             context.go('/events');
           } else if (state is AuthFailure) {
             NotificationUtils.showSnackBar(context, state.error, isError: true);
@@ -72,9 +70,7 @@ class SignUpScreen extends StatelessWidget {
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
-                  // Navigator.of(context).pushReplacement(
-                  //     MaterialPageRoute(builder: (_) => SignInScreen()));
-                  context.go('/signup');
+                  context.go('/signin');
                 },
                 child: const Text(
                   "Already have an account? Sign In",

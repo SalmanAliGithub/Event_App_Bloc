@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:events_app/models/event_model.dart';
 import 'package:events_app/presentation/screens/event_detail_screen.dart';
 
+import 'package:go_router/go_router.dart';
+
 class EventCard extends StatelessWidget {
   final Event event;
 
@@ -103,12 +105,13 @@ class EventCard extends StatelessWidget {
             children: [
               TextButton(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => EventDetailScreen(event: event),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => EventDetailScreen(event: event),
+                  //   ),
+                  // );
+                  context.push('/event_detail/${event.id}');
                 },
                 child: const Text('DETAILS'),
               ),
